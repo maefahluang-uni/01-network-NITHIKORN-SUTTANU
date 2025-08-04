@@ -51,7 +51,14 @@ Think about the following,  modify the code to experiment it and put your though
 - What would be the benefit of running many instances?
 
 ```
-  Your thought here...
+- How to run MockWebServer on different ports?
+  Just create new instances of MockWebServer with different port numbers and start them in separate threads.
+- How can we run more than 2 instances of  `MockWebserver`? 
+  Use a loop to start multiple servers on different ports.
+- How can we change the content in HTML such as showing table, more text and adding images?
+  Modify the HTML string sent in the response. For example:
+- What would be the benefit of running many instances?
+  Running multiple MockWebServer instances helps balance the load, isolate different services on separate ports, and improve reliability by ensuring others stay running if one fails. It’s also useful for testing and simulating real-world setups with multiple services.
 ```
 **Please push the code back to Github to submit this lab**
 After you push, ensure you have green checkmark on the repository.
